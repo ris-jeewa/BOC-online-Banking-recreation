@@ -1,0 +1,127 @@
+<!-- created by Risni Dheerasekara (214052E) -->
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Online Registration</title>
+
+  <link rel="stylesheet" href="/styles/register.css">
+
+</head>
+
+<body>
+  <!-- header section -->
+  <header>
+    <img src="/images/logo2.PNG" height=75 style="padding-left:200px">
+  </header>
+
+  <!--middle large box-->
+  <div class="table">
+
+    <!--top title of box-->
+    <div class="window">
+      <div class="title" style="width:100%">
+        Online Registration
+
+        <!-- adjust date and time -->
+        <span class="dt">
+          <span id="date"></span>
+          <span id="time"></span>
+        </span>
+      </div>
+    </div>
+
+    <!-- first section -->
+    <div class="form1">
+      <p style="margin-bottom:0px;">To register online using your mobile number and email should have been updated with
+        the bank</p>
+      <input type="checkbox" id="c1">
+      <label>Yes, I am an existing customer of Bank of Ceylon</label>
+    </div>
+
+    <!-- Second section -->
+    <div class="form1">
+      <form>
+        <label for="reg" style="font-size:18px;margin-left:100px">Register using*:</label>
+        <select NAME="Debit Card customer" class="deb">
+          <option style="width:400px;height:25px">Debit Card customer</option>
+        </select><br>
+        <!--card input-->
+        <label for="card" style="font-size:18px;margin-left:125px">Debit Card*:</label>
+        <span>
+          <input type="tel" class="card-number__part" maxlength="4"><span>&#8722</span>
+          <input type="tel" class="card-number__part" maxlength="4"><span>&#8722</span>
+          <input type="tel" class="card-number__part" maxlength="4"><span>&#8722</span>
+          <input type="tel" class="card-number__part" maxlength="4">
+        </span><br>
+
+        <!--mobile No. input-->
+        <label for="mob" style="font-size:18px;margin-left:88px">Mobile Number*:</label>
+        <select Name="select country" class="mob1">
+          <option>Select country</option>
+          <option>Dubai</option>
+          <option>India</option>
+          <option>Sri Lanka</option>
+        </select>
+        <input type="text" class="mob" maxlength="10"> <br>
+
+        <!--email input-->
+        <label for="email" style="font-size:18px;margin-left:98px">Email Address*:</label>
+        <input type="text" class="email">
+
+      </form>
+    </div>
+
+    <!--second section-->
+    <div class="form1">
+      <h3>Security Code</h3>
+
+      <p style="margin-bottom:0px;">Please enter the below code in the security code space</p>
+      <div class="row">
+        <div class="security-code">
+          <p style="margin-top:30px;" id="sec-no">
+            <script>
+              var chars = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXTZ";
+              var string_length = 5;
+              var randomstring = '';
+              for (var i = 0; i < string_length; i++) {
+                var rnum = Math.floor(Math.random() * chars.length);
+                randomstring += chars.substring(rnum, rnum + 1);
+              }
+              document.writeln(randomstring);
+
+            </script>
+          </p>
+        </div>
+        <div class="refresh"><img class="img" src="/images/regLogo.png" alt="logo" height=15 onclick="randomString()"></div>
+        <span class="code">
+          <label>Security Code</label>
+          <input type="password" class="sec-code">
+        </span>
+      </div>
+    </div>
+
+    <!--third section-->
+    <div class="form1">
+      <p>*Indicates mandatory fields. **:Indicates mandatory if particular option is enabled.</p>
+      <div class="buttons">
+        <button class="btn">Cancel</button>
+        <button class="btn">Submit</button>
+      </div>
+    </div>
+
+
+  </div>
+
+  <!--footer section-->
+  <footer>
+    <p>&copy;2017 Bank of Ceylon.All Rights Reserved.</p>
+  </footer>
+
+  <script src="/javascript/register.js"></script>
+
+
+</body>
+
+
+</html>

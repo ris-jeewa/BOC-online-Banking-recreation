@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="styles/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;400;900&family=Roboto:wght@400;500&display=swap"
+        rel="stylesheet">
+    <title>BOC Smart Online Banking</title>
+</head>
+<header>
+    <img src="/images/logo2.png" alt="logo" height="70px">
+    <p class="p1">
+        Call Center - 0094 11 220 4444<br>
+        <label for="lang">Choose Language</label>
+        <select>
+            <option>English</option>
+        </select>
+
+    </p>
+</header>
+
+<body>
+    <div class="box">
+        <div class="login">
+            <h4>Please login to BOC Smart Online Banking</h4>
+            <form>
+                <label for="ID">User ID
+                    <span class="tool" data-tooltip="K_USERNAME_TOOLTIP"><img class="png" src="/images/tooltip.png" alt="tooltip"
+                        width="20px" height="20px"></span>
+                </label>
+             
+                <input type="text" id="ID" class="user"><br><br>
+                <div class="bt1">
+                    <button class="butn" onclick="show_keyboard()">Virtual Keyboard</button>
+                    <button class="butn" onclick="hide_keyboard()">Standard Keyboard</button>
+                </div>
+                <hr width="75%" size="1px" color="darkgrey">
+                <label for="PW">Password
+                    <span class="tool" data-tooltip="K_PASSWORD_TOOLTIP"><img class="png" src="/images/tooltip.png" alt="tooltip"
+                        width="20px" height="20px"></span>
+                </label>
+                
+                <input type="text" id="PW" class="pass"><br>
+                <a href="#" class="buttn">Forgot Password?</a>
+                <a href="#" class="buttn">Unlock my User ID</a><br><br><br>
+                <div class="keyboard" id="keyboard">
+                    <div class="raw">
+                        <button class="btn">(</button>
+                        <button class="btn">)</button>
+                        <button class="btn">&</button>
+                        <button class="btn">@</button>
+                        <button class="btn">_</button>
+                        <button class="btn">%</button>
+                        <button class="btn">#</button>
+                        <button class="btn">.</button>
+                        <button class="btn">+</button>
+                        <button class="btn">?</button>
+                        <button class="btn">*</button>
+                        <button class="btn">$</button>
+                        <button class="btn">!</button>
+                        <button class="btn">-</button>
+                        <button class="btn">=</button>
+                    </div>
+                    <div class="raw">
+                      
+                        <button class="btn1">d</button>
+                        <button class="btn1">w</button>
+                        <button class="btn1">h</button>
+                        <button class="btn1">t</button>
+                        <button class="btn1">j</button>
+                        <button class="btn1">u</button>
+                        <button class="btn1">z</button>
+                        <button class="btn1">e</button>
+                        <button class="btn1">p</button>
+                        <button class="btn1">g</button>
+                       
+                        
+                        <div class="numbers">
+                            <button class="num1">4</button>
+                            <button class="num1">6</button>
+                            <button class="num1">2</button>
+                        </div>
+
+
+                    </div>
+                    <div class="raw">
+
+                        <button class="btn1">o</button>
+                        <button class="btn1">i</button>
+                        <button class="btn1">v</button>
+                        <button class="btn1">c</button>
+                        <button class="btn1">f</button>
+                        <button class="btn1">x</button>
+                        <button class="btn1">y</button>
+                        <button class="btn1">m</button>
+                        <button class="btn1">n</button>
+                        <div class="numbers">
+                            <button class="num2">3</button>
+                            <button class="num2">0</button>
+                            <button class="num2">5</button>
+                        </div>
+
+
+                    </div>
+                    <div class="raw">
+
+                        <button class="btn1">l</button>
+                        <button class="btn1">q</button>
+                        <button class="btn1">k</button>
+                        <button class="btn1">a</button>
+                        <button class="btn1">s</button>
+                        <button class="btn1">r</button>
+                        <button class="btn1">b</button>
+                        <div class="numbers">
+                            <button class="num3">9</button>
+                            <button class="num3">8</button>
+                            <button class="num3">7</button>
+                        </div>
+
+                    </div>
+                    <div class="raw">
+                        <div class="numbers">
+                            <button class="num4">1</button>
+                        </div>
+                    </div>
+                    <div class="funct">
+                        <button class="upper">Upper</button>
+                        <button class="delete">Delete</button>
+                        <button class="clear">Clear All</button>
+                        <button class="mix">Not Mixed</button>
+                    </div>
+                </div>
+                <a href="register.html" class="b1 a">Register Now</a>
+                <a href="#" class="b1 b">Sign In</a>
+            </form>
+        </div>
+        <ul>
+            <li>
+                <h6>ATM Locator</h6>
+                <div class="para">Looking for Branch/ATM/CDM Locations?</div>
+                <a href="locator.html">
+                    <img src="/images/logo.png" alt="icon" width="25px" height="25px">
+                </a>
+            </li>
+            <li>
+                <h6>Offers</h6>
+                <div class="para">Look for more offers here.</div>
+                <a href="#">
+                    <img src="/images/logo.png" alt="icon" width="25px" height="25px">
+                </a>
+
+            </li>
+            <li>
+                <h6>FAQ</h6>
+                <div class="para">For frequently asked questions click here.</div>
+                <a href="faq.html">
+                    <img src="/images/logo.png" alt="icon" width="25px" height="25px">
+                </a>
+            </li>
+            <li>
+                <h6>Exchange Rates</h6>
+                <div class="para">Exchange Rates.</div>
+                <a href="rates.html">
+                    <img src="/images/logo.png" alt="icon" width="25px" height="25px">
+                </a>
+            </li>
+            <li>
+                <h6>User Guide</h6>
+                <div class="para">User guide for BOC smart online banking desktop version.</div>
+                <a href="guide.html">
+                    <img src="/images/logo.png" alt="icon" width="25px" height="25px">
+                </a>
+            </li>
+        </ul>
+    </div>
+</body>
+
+</html>
